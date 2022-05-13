@@ -1,0 +1,44 @@
+@media screen and(max-width:768px){
+    .bg .content1{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .bg .icon{
+        width: 100% !important;
+    }
+    .bg .icon ul{
+       width: 100% !important;
+    }
+}
+@media screen and (max-width:576px){
+    #about .right h2{
+        font-size: 50px;
+    } 
+    #about .right h2::after{
+        font-size: 35px;
+    }
+    #service h2{
+        font-size: 65px;
+    }
+    #service h2::after{
+        font-size: 35px;
+    }
+    #work h2{
+        font-size: 50px;
+    }
+    #work h2::after{
+        font-size: 35px;
+    }
+    #skills h2{
+        font-size: 90px;
+    }
+    #skills h2::after{
+        font-size: 35px;
+    }
+    #contact h2{
+        font-size: 50px;
+    } 
+    #contact h2::after{
+        font-size: 30px;
+    }
+}

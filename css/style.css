@@ -1,0 +1,415 @@
+body{
+    --main-color: rgb(205 147 24);
+}
+
+/* Start section navbar */
+.navbar{
+    background: black !important;
+}
+.navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .show>.nav-link{
+    color: var(--main-color) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--main-color) !important;
+}
+.navbar-light .navbar-toggler{
+    background-color: white;
+}
+/* End section navbar */
+
+/* Start section bg */
+#bg{
+    background: url(../image/bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#bg .bg1{
+    min-height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+#bg .content h1{
+    font-size: 60px;
+}
+#bg .content h1::after{
+    content: "Badr Osama";
+    animation: badr 3s linear 1s infinite alternate;
+}
+@keyframes badr{
+    0%{
+        content: "";
+    }
+    10%{
+        content: "B|"
+    }
+    20%{
+        content: "BA|"
+    }
+    30%{
+        content: "BAD|"
+    }
+    40%{
+        content: "BADR|"
+    }
+    50%{
+        content: "BADR |"
+    }
+    60%{
+        content: "BADR O|"
+    }
+    70%{
+        content: "BADR OS|"
+    }
+    80%{
+        content: "BADR OSA|"
+    }
+    90%{
+        content: "BADR OSAM|"
+    }
+    100%{
+        content: "BADR OSAMA...'"
+    }
+}
+#bg .content p{
+    max-width: 500px;
+}
+#bg .content a{
+    background: unset;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+}
+#bg .content a:hover{
+    border: 0;
+    color: black !important;
+    background: white;
+}
+
+#bg .icons .setting{
+    top: 20%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#bg .icons .button{
+    width: 20px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+    bottom: 5%;
+    animation: moving 3s linear infinite alternate;
+}
+@keyframes moving{
+    0%{
+        bottom: 7%;
+    }
+    50%{
+        bottom: 5%;
+    }
+    100%{
+        bottom: 7%;
+    }
+}
+#bg .icons .button::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    background-color: white;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%);
+}
+#bg .icons .top a{
+    right: 30px;
+    bottom: 20px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+/* End section bg */
+
+/* Start section about */
+#about .right h2{
+    font-size: 80px;
+    color: #e4e4e4;
+}
+#about .right h2::after{
+    content: "ABOUT";
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#about .right h3 span{
+    color: var(--main-color);
+}
+#about .icons1 a{
+    color: black;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 25px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+#about .icons1 a:hover{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    
+}
+/* End section about */
+
+/* Start section service */
+#service{
+    background: #0c0c0c;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#service h2{
+    font-size: 100px;
+    color: #363636;
+}
+#service h2::after{
+    content: "SERVICES";
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#service .row{
+    margin-top: 50px;
+}
+#service .row .icon{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease-in-out;
+}
+#service .row h3::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+    color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+#service .row .service-item:hover .icon{
+    color: var(--main-color);
+}
+#service .row .service-item:hover h3::after{
+    width: 100px;
+}
+/* End section service */
+
+/* Start section work */
+#work{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#work h2{
+    font-size: 100px;
+    color: #e4e4e4;
+}
+#work h2::after{
+    content: "WORK";
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#work .navs{
+    margin: 60px 0;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link{
+    background-color: var(--main-color) !important;
+    color: white !important;
+    border-radius: 25px;
+}
+.nav-pills .nav-link{
+    color: black !important;
+    margin: 10px;
+}
+#work .container .content-all{
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#work .container .content-all img{
+    transition: all 0.5s ease-in-out;
+}
+#work .container .content-all:hover img{
+    transform: scale(1.1);
+}
+#work .container .content-all .overlay{
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
+    transform: translateY(-100%);
+    background: rgba(255,255,255,0.9);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important ;
+}
+#work .container .content-all:hover .overlay{
+    transform: translateY(0);
+}
+#work .container .content-all .overlay a .fa-solid{
+    color: var(--main-color);
+}
+#work .container .content-all .overlay a:hover h3{
+    color: var(--main-color) !important;
+    transition: all 0.5s ease-in-out;
+}
+/* End section work */
+
+/* Start section free-lancer */
+#free-lancer{
+    background: #0c0c0c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#free-lancer .container a{
+    color: white;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 26px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+#free-lancer .container a:hover{
+    background-color: rgb(154 110 16);
+    border: 1px solid rgb(154 110 16);
+}
+/* End section free-lancer */
+
+/* Start section skills */
+#skills{
+    padding-top: 60px;
+}
+#skills h2{
+    font-size: 120px;
+    color: #e4e4e4;
+}
+#skills h2::after{
+    content: "SKILLS";
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#skills .row{
+    margin: 60px 0;
+}
+#skills .row h1::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+    color: var(--main-color);
+    bottom: 0;
+    left: 11%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+#skills .row h4 span{
+    color: var(--main-color);
+}
+/* End section skills */
+
+/* Start section logo */
+#logo{
+    background: #0c0c0c;
+}
+#logo .row img{
+    width: 100px !important;
+}
+/* End section logo */
+
+/* Start section contact */
+#contact .row{
+    margin: 60px 0;
+}
+#contact h2{
+    font-size: 80px;
+    color: #e4e4e4;
+}
+#contact h2::after{
+    content: "CONTACT ME";
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#contact .two{
+    margin-bottom: 40px;
+}
+#contact .contact-item .fas{
+    color: #AF567F;
+}
+/* End section contact */
+
+/* Start section end */
+#end{
+    background: black;
+}
+#end .icons2 a{
+    color: #6C757D;
+    background-color: #343434;
+    border:1px solid #343434;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+#end .icons2 a:hover{
+    background-color: white;
+    color: #343434;
+}
+#end p{
+    color: #6C757D;
+}
+/* End section end */
+
